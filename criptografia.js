@@ -22,27 +22,5 @@ function cryptography (vin) {
       thirdCrypt += String.fromCharCode(charNumber);
     }
   }
-  console.log(firstCrypt)
-  return thirdCrypt
+  return thirdCrypt;
 };
-
-function decrypt (vin) {
-  const vinLength = vin.length;
-  let firstDesCrypt = "";
-  for (let i = 0; i < vinLength; i ++) {
-    const charNumber = vin.charCodeAt(i);
-    if (charNumber >= 65 && charNumber <= 90) {
-      const newChar = String.fromCharCode(charNumber).toLowerCase();
-      firstDesCrypt += newChar;
-    } else if (charNumber >= 97 && charNumber <= 122) {
-      const newChar = String.fromCharCode(charNumber).toUpperCase();
-      firstDesCrypt += newChar;
-    } else {
-      firstDesCrypt += String.fromCharCode(charNumber);
-    }
-  }
-  let secondDesCrypt = firstDesCrypt.split("").reverse().join("")
-  return secondDesCrypt;
-}
-
-console.log(decrypt(cryptography(vin)))
