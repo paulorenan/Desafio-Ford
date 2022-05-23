@@ -8,5 +8,8 @@ function cryptography (vin) {
     const newChar = String.fromCharCode(charNumber + vinLength);
     firstCrypt += newChar
   }
-  return firstCrypt;
+  let secondCrypt = firstCrypt.split("").reverse().join("");
+  return secondCrypt;
 };
+
+cryptography(vin);
