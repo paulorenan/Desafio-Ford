@@ -1,0 +1,23 @@
+{
+  "name": "ford",
+  "version": "1.0.0",
+  "description": "",
+  "main": "criptografia.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paulorenan/Desafio-Ford.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/paulorenan/Desafio-Ford/issues"
+  },
+  "homepage": "https://github.com/paulorenan/Desafio-Ford#readme",
+  "devDependencies": {
+    "jest": "^28.1.0"
+  }
+}

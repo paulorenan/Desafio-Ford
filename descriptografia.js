@@ -24,3 +24,8 @@ function decrypt (vin) {
   }
   return thirdDecrypt;
 };
+
+module.exports = {
+  vin,
+  decrypt
+};

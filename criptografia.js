@@ -24,3 +24,8 @@ function cryptography (vin) {
   }
   return thirdCrypt;
 };
+
+module.exports = {
+  vin,
+  cryptography
+};
