@@ -9,7 +9,20 @@ function cryptography (vin) {
     firstCrypt += newChar
   }
   let secondCrypt = firstCrypt.split("").reverse().join("");
-  return secondCrypt;
+  let thirdCrypt = "";
+  for (let i = 0; i < vinLength; i ++) {
+    const charNumber = secondCrypt.charCodeAt(i);
+    if (charNumber >= 65 && charNumber <= 90) {
+      const newChar = String.fromCharCode(charNumber).toLowerCase();
+      thirdCrypt += newChar;
+    } else if (charNumber >= 97 && charNumber <= 122) {
+      const newChar = String.fromCharCode(charNumber).toUpperCase();
+      thirdCrypt += newChar;
+    } else {
+      thirdCrypt += String.fromCharCode(charNumber);
+    }
+  }
+  return thirdCrypt
 };
 
 cryptography(vin);
