@@ -22,6 +22,7 @@ function cryptography (vin) {
       thirdCrypt += String.fromCharCode(charNumber);
     }
   }
+  console.log(firstCrypt)
   return thirdCrypt
 };
 
@@ -40,7 +41,8 @@ function decrypt (vin) {
       firstDesCrypt += String.fromCharCode(charNumber);
     }
   }
-  return firstDesCrypt;
+  let secondDesCrypt = firstDesCrypt.split("").reverse().join("")
+  return secondDesCrypt;
 }
 
 console.log(decrypt(cryptography(vin)))
